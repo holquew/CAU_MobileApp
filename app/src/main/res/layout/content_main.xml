@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageButton
+        android:id="@+id/sea_eco"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="SeaEcoListener"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/region"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sea_eco" />
+
+    <ImageButton
+        android:id="@+id/region"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="RegionListener"
+        app:layout_constraintLeft_toRightOf="@id/sea_eco"
+        app:layout_constraintRight_toLeftOf="@id/mudflat_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/region" />
+
+    <ImageButton
+        android:id="@+id/mudflat_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="MudflatInfoListener"
+        app:layout_constraintLeft_toRightOf="@+id/region"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mudflat_info" />
+
+    <ImageButton
+        android:id="@+id/mudflat_now"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="MudflatNowListener"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/calendar"
+        app:layout_constraintTop_toBottomOf="@id/sea_eco"
+        app:srcCompat="@drawable/mudflat_now" />
+
+    <ImageButton
+        android:id="@+id/calendar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="CalActivityListener"
+        app:layout_constraintLeft_toRightOf="@id/mudflat_now"
+        app:layout_constraintRight_toLeftOf="@id/relative_info"
+        app:layout_constraintTop_toBottomOf="@id/sea_eco"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageButton
+        android:id="@+id/relative_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:onClick="SListViewListener"
+        app:layout_constraintLeft_toRightOf="@id/calendar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sea_eco"
+        app:srcCompat="@drawable/relative_info" />
+
+
+</android.support.constraint.ConstraintLayout>
