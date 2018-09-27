@@ -16,6 +16,9 @@
 
         </activity>
 
+
+
+
         <!-- 스플래시 액티비티 -->
         <activity
             android:name=".SplashActivity"
@@ -45,11 +48,20 @@
             android:name=".CalendarActivity"
             android:label="CalendarActivity"></activity>
         <activity
-            android:name=".SListView"
+            android:name=".SortedListView"
             android:label="ListViewActivity"></activity>
         <activity
             android:name=".DummyActivity"
             android:label="Dummy"></activity>
+
+        <activity android:name=".ToDoActivity"
+            android:label="ToDo"></activity>
+
+        <activity android:name=".AddNoteActivity"
+            android:label="AddNote"></activity>
+        <activity android:name=".NotePreviewActivity"
+            android:label="NotePreview"></activity>
+
 
     </application>
 

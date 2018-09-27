@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorPrimary"
-            android:onClick="onClick"
+            android:onClick="TodoActivityListener"
             android:text="일정 추가"
             android:textColor="#ffffff" />
 

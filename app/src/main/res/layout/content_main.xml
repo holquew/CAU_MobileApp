@@ -8,6 +8,15 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/sea_eco"
         android:layout_width="100dp"
@@ -35,7 +44,7 @@
         android:contentDescription="@string/app_name"
         android:gravity="center"
         android:scaleType="fitCenter"
-        android:onClick="RegionListener"
+        android:onClick="SeaEcoListener"
         app:layout_constraintLeft_toRightOf="@id/sea_eco"
         app:layout_constraintRight_toLeftOf="@id/mudflat_info"
         app:layout_constraintTop_toTopOf="parent"
